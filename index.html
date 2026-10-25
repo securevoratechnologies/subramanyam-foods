@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Subramanyam Foods · Tradition Served Fresh</title>
+  <meta name="description" content="Experience authentic Indian cuisine at Subramanyam Foods in Hebbal, Bangalore — where tradition meets warmth, and every dish is crafted with care.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ==================== HEADER / NAVIGATION ==================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <!-- Wordmark with Logo and Text -->
+      <a href="#home" class="wordmark" aria-label="Subramanyam Foods – home">
+        <img src="assets/logo.png" alt="Subramanyam Foods Logo" class="brand-logo" onerror="this.style.display='none';">
+        <!-- Both words are now on the same line and same font size -->
+        <span class="wordmark-text">Subramanyam Foods</span>
+      </a>
+
+      <!-- Desktop nav -->
+      <nav class="main-nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#story" class="nav-link">Our Story</a></li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Reserve button (desktop) -->
+      <a href="#" class="btn btn-reserve header-cta" id="reserveHeaderBtn" role="button">Reserve a Table</a>
+
+      <!-- Mobile hamburger toggle -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+
+    <!-- Mobile navigation panel -->
+    <div class="mobile-nav-panel" id="mobileNav" aria-hidden="true">
+      <nav aria-label="Mobile navigation">
+        <ul class="mobile-nav-list">
+          <li><a href="#home" class="mobile-nav-link">Home</a></li>
+          <li><a href="#story" class="mobile-nav-link">Our Story</a></li>
+          <li><a href="#menu" class="mobile-nav-link">Menu</a></li>
+          <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+          <li><a href="#" class="mobile-nav-link mobile-reserve" id="reserveMobileBtn">Reserve a Table</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <span class="eyebrow-line"></span>
+            <span>Authentic Indian Cuisine · Hebbal</span>
+          </div>
+          <h1 class="hero-title">
+            Tradition Served Fresh, <em>Every&nbsp;Day.</em>
+          </h1>
+          <p class="hero-desc">
+            A warm dining experience rooted in India’s culinary heritage — thoughtfully prepared with handpicked ingredients and served with genuine hospitality. 
+          </p>
+          
+          <!-- Delivery Highlight -->
+          <div class="delivery-highlight">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 18H3c-.6 0-1-.4-1-1V7c0-.6.4-1 1-1h10c.6 0 1 .4 1 1v11"/><path d="M14 9h4l4 4v4c0 .6-.4 1-1 1h-2"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/><path d="M9 18h6"/></svg>
+            <span>Free online delivery within 3km of Hebbal!</span>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#menu" class="btn btn-primary">Explore Our Menu</a>
+            <a href="#" class="btn btn-outline" id="reserveHeroBtn" role="button">Reserve a Table</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-image-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=1200&q=85&auto=format&fit=crop" 
+              alt="A rich, authentic Indian thali spread"
+              width="1200" height="1500"
+              loading="eager"
+              class="hero-img"
+            >
+            <div class="hero-image-accent"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SIGNATURE DISHES ==================== -->
+    <section id="menu" class="section dishes-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">From Our Kitchen</span>
+          <h2 class="section-title">Our Menu</h2>
+          <p class="section-subtitle">Crafted with time-honoured recipes, offering a diverse range of flavors.</p>
+        </div>
+
+        <div class="dishes-grid">
+          <!-- 1. South Indian Meal -->
+          <article class="dish-card">
+            <figure class="dish-image">
+              <img 
+                src="https://images.unsplash.com/photo-1610192244261-3f33de3f55e4?w=800&q=85&auto=format&fit=crop" 
+                alt="Traditional South Indian Meal served on a banana leaf"
+                width="800" height="600" loading="lazy"
+              >
+            </figure>
+            <div class="dish-info">
+              <h3>South Indian Meal</h3>
+              <p>A wholesome traditional thali featuring rice, sambar, rasam, poriyal, and crisp appalam.</p>
+            </div>
+          </article>
+
+          <!-- 2. North Indian Meal -->
+          <article class="dish-card">
+            <figure class="dish-image">
+              <img 
+                src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=800&q=85&auto=format&fit=crop" 
+                alt="Rich North Indian Meal with paneer, curries, and naan"
+                width="800" height="600" loading="lazy"
+              >
+            </figure>
+            <div class="dish-info">
+              <h3>North Indian Meal</h3>
+              <p>A hearty platter of rich curries, fresh paneer, fragrant jeera rice, and warm tandoori rotis.</p>
+            </div>
+          </article>
+
+          <!-- 3. Chinese -->
+          <article class="dish-card">
+            <figure class="dish-image">
+              <img 
+                src="https://images.unsplash.com/photo-1585032226651-759b368d7246?w=800&q=85&auto=format&fit=crop" 
+                alt="Indo-Chinese noodles and Manchurian"
+                width="800" height="600" loading="lazy"
+              >
+            </figure>
+            <div class="dish-info">
+              <h3>Chinese</h3>
+              <p>Indo-Chinese favourites including sizzling Hakka noodles, spicy Manchurian, and crispy starters.</p>
+            </div>
+          </article>
+
+          <!-- 4. Chats -->
+          <article class="dish-card">
+            <figure class="dish-image">
+              <img 
+                src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800&q=85&auto=format&fit=crop" 
+                alt="Indian Chaat with crispy puris and sweet chutney"
+                width="800" height="600" loading="lazy"
+              >
+            </figure>
+            <div class="dish-info">
+              <h3>Chats</h3>
+              <p>A tangy and spicy street-food experience featuring crispy Pani Puri, Sev Puri, and Dahi Bhalla.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== OUR STORY ==================== -->
+    <section id="story" class="section story-section">
+      <div class="container story-grid">
+        <div class="story-image-wrap">
+          <img 
+            src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=1000&q=85&auto=format&fit=crop" 
+            alt="Warm, atmospheric interior of Subramanyam Foods"
+            width="1000" height="750" loading="lazy" class="story-img"
+          >
+          <div class="story-image-frame"></div>
+        </div>
+        <div class="story-content">
+          <span class="section-eyebrow">Our Story</span>
+          <h2 class="story-title">A Legacy of Flavour & Hospitality</h2>
+          <p class="story-text">
+            At Subramanyam Foods, we believe that great food begins with respect — for tradition, for ingredients, and for the people we serve. Every dish is prepared fresh, using recipes passed down through generations and spices sourced with care.
+          </p>
+          <p class="story-text">
+            From our kitchen in Hebbal to your table, we invite you to experience the warmth of Indian hospitality in every bite.
+          </p>
+          <a href="#contact" class="btn btn-outline-dark story-btn">Visit Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VISIT US / CONTACT ==================== -->
+    <section id="contact" class="section contact-section">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <span class="section-eyebrow">Visit Us</span>
+          <h2 class="contact-title">We Look Forward to Welcoming You</h2>
+          <div class="contact-details">
+            <div class="contact-item">
+              <span class="contact-label">Address</span>
+              <p>Hebbal, Bangalore 560024</p>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Phone</span>
+              <p>+91 98765 43210</p>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Opening Hours</span>
+              <p>Morning 10:00 AM – Night 10:00 PM (Daily)</p>
+            </div>
+          </div>
+          <div class="contact-actions">
+            <a href="#" class="btn btn-primary" id="directionsBtn" role="button">Get Directions</a>
+            <a href="#" class="btn btn-outline-dark" id="callBtn" role="button">Call Us</a>
+          </div>
+          <p class="contact-reserve-note">
+            To make a reservation, please <a href="#" id="reserveContactBtn" class="inline-link">click here</a>.
+          </p>
+        </div>
+        <div class="contact-visual">
+          <img 
+            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=85&auto=format&fit=crop" 
+            alt="Elegant table setting at Subramanyam Foods"
+            width="800" height="600" loading="lazy" class="contact-img"
+          >
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <span class="wordmark-footer">Subramanyam Foods</span>
+        <p class="footer-tagline">Tradition served fresh, every day.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#story">Our Story</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>Hebbal, Bangalore 560024</p>
+        <p>+91 98765 43210</p>
+        <p>hello@subramanyamfoods.com</p>
+      </div>
+      <div class="footer-social">
+        <h4>Follow</h4>
+        <ul class="social-list">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="copyrightYear"></span> Subramanyam Foods. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Reservation Modal / Toast -->
+  <div id="reservationToast" class="toast" role="status" aria-live="polite">
+    <span class="toast-message">Reservation details are not configured yet. Please call us to book a table.</span>
+    <button class="toast-close" id="toastClose" aria-label="Close message">×</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
